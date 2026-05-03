@@ -186,6 +186,8 @@ An interface will appear showing results as they load, letting you track the age
 
 We built TradingAgents with LangGraph to ensure flexibility and modularity. The framework supports multiple LLM providers: OpenAI, Google, Anthropic, xAI, DeepSeek, Qwen (Alibaba DashScope), GLM (Zhipu), OpenRouter, Ollama for local models, and Azure OpenAI for enterprise.
 
+> **Using Claude Code without an API key?** See [docs/CLAUDE_CODE_USAGE.md](docs/CLAUDE_CODE_USAGE.md) for an alternative usage pattern that drives the TradingAgents flow from a Claude Code chat session, using `yfinance` for data and Claude as the reasoning engine. This trades persistence and structured-output guarantees for zero extra billing.
+
 ### Python Usage
 
 To use TradingAgents inside your code, you can import the `tradingagents` module and initialize a `TradingAgentsGraph()` object. The `.propagate()` function will return a decision. You can run `main.py`, here's also a quick example:
